@@ -1,0 +1,71 @@
+@import 'includes/rest.scss';
+
+
+body {
+    font-family: Georgia;
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.wrapper {
+    max-width: 1160px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    background-color: #313131;
+
+    @media only screen and (max-width: 900px) {
+
+        padding: 0;
+    }
+}
+
+.inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+@import 'partials/_header.scss';
+@import 'partials/_promo.scss';
+@import 'partials/_content.scss';
+
+.footer {
+    color: #999999;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.info-group {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1200px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 25px;
+        justify-items: center;
+        
+
+    }
+
+    @media only screen and (max-width: 540px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+        justify-items: center;
+        }
+
+
+}
+
+@import 'partials/_company.scss';
+@import 'partials/_social.scss';
+@import 'partials/_blog.scss';
+@import 'partials/_contact-form.scss';
+@import 'partials/_copyright.scss';

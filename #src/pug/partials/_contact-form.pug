@@ -1,0 +1,24 @@
+.contact
+
+    h3.contact__title Contact Us
+
+    form.form(action="#", method="post")
+
+        .form__item
+            
+            label.form__label(for="name") 
+            input.form__input(type="text" id="name" placeholder="Name" required)
+
+        .form__item
+
+            label.form__label(for="email") 
+            input.form__input(type="email" id="email" placeholder="Email" required)
+
+        .form__item
+
+            label.form__label(for="message")
+            textarea.form__textarea(id="message" placeholder="Message" required)
+
+        .form__item 
+
+            input.form__btn(type="submit", value="submit")

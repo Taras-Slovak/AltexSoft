@@ -1,0 +1,61 @@
+@import "../mixins/mixin-size.scss";
+
+
+
+.blog {
+    width: 225px;
+
+    &__title {
+        position: relative;
+        margin-bottom: 35px;
+        @include font-size(16, 16);
+        color: #ffffff;
+
+        &::before {
+            position: absolute;
+            bottom: -15px;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #3a3a3a;
+        }
+    }
+
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+
+    &__sub-title {
+        @include font-size(13, 14);
+        font-weight: bold;
+    }
+
+    &__body {
+        margin-top: 7px;
+        @include font-size(12, 13);
+
+        p {
+            margin-bottom: 11px;
+            @include line-height(19, 18);
+        }
+    }
+
+    &__link {
+        align-self: flex-end;
+        margin-top: 3px;
+        margin-bottom: 20px;
+        color: #a7c353;
+        transition: all 0.2s;
+
+        &:hover {
+            color: #86a133;
+            transform: translateX(3px);
+        }
+
+        &:active {
+            transform: scale(0.95) translateX(3px);
+        }
+    }
+}

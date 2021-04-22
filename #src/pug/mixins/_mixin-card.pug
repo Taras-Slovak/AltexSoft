@@ -1,0 +1,50 @@
+include _mixin-picture.pug
+
+
+mixin card-services(img, subTitle, txt)
+    
+    .card-services
+
+        .card-services__image
+            +image(img)
+    
+        .card-services__content
+
+            h3.card-services__sub-title #{subTitle}
+
+            .card-services__txt
+                p #{txt}
+
+
+mixin card-testimonials(img, subTitle, txt)
+    
+    .card-testimonials
+
+        .card-testimonials__head
+
+            .card-testimonials__image
+
+                +simple-img(img)
+                
+
+            h3.card-testimonials__sub-title #{subTitle}
+
+        .card-testimonials__txt 
+            p #{txt}
+
+        a.card-testimonials__link(href="#") View This Project » 
+            
+
+    mixin card-text()
+
+        .card-text 
+
+            h4.card-text__sub-title Blog Post Title
+
+            .card-text__body
+
+                p Posted by Admin on 00.00.0000
+
+                p Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.
+
+            a.card-text__link(href="#") Read More »

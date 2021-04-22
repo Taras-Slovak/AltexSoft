@@ -1,0 +1,54 @@
+include ../mixins/_mixin-picture.pug
+include ../mixins/_mixin-card.pug
+
+
+section.content
+
+    .about
+
+        h2.about__title A Little About Us
+
+        .about__container
+
+            .about__image
+
+                +image('about')
+
+            .about__txt
+
+                p Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.
+
+                p Idenim semper pellente velis felit ac. Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.
+
+        a.about__link(href="#") Read More About Us »
+            
+
+
+    .services
+
+        h2.services__title Some of Our Services
+
+        .services__container
+
+            +card-services('services', 'Service Title','Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.')
+
+            +card-services('services', 'Service Title','Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.')
+
+            +card-services('services', 'Service Title','Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.')
+
+            +card-services('services', 'Service Title','Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.')
+
+        a.services__link(href="#") View All Of Our Services »
+            
+
+
+    .testimonials
+
+        h2.testimonials__title What Our Clients Say
+
+        .testimonials__container
+
+            +card-testimonials('quotes', 'Tommy Tanker - CEO','Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.')
+
+            +card-testimonials('quotes', 'Tommy Tanker - CEO','Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.')
+

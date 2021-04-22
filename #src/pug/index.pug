@@ -1,0 +1,51 @@
+extends common/_layout.pug
+
+block title
+    title AltexSoft
+
+block links
+    
+    link(rel="stylesheet", href="css/style.min.css")
+
+block content
+        .wrapper 
+
+            .inner
+                header.header
+
+                    include partials/_header.pug
+
+
+            main.main
+                
+                .inner
+                    include partials/_promo.pug 
+
+                .inner
+
+                    include partials/_content.pug
+        
+
+            footer.footer 
+
+                .info-group
+                
+                    include partials/_company.pug 
+
+                    include partials/_social.pug 
+
+                    include partials/_blog.pug 
+                
+                    include partials/_contact-form.pug
+                                    
+                //- ---copyright---
+
+                include partials/_copyright.pug
+                    
+
+        
+
+        
+block script
+
+    script(src="js/script.js")

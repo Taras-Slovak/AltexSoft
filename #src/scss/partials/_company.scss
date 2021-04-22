@@ -1,0 +1,71 @@
+@import "../mixins/mixin-size.scss";
+
+
+
+.company {
+    width: 225px;
+    @include font-size(12,13);
+    color: #999999;
+
+  
+
+    &__title {
+        position: relative;
+        margin-bottom: 35px;
+        @include font-size(16, 15);
+        color: #ffffff;
+        @media only screen and (max-width: 540px) {
+            text-align: center;   
+           }
+
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #3a3a3a;
+        }
+    }
+
+    &__address {
+
+        @include line-height(19, 18);
+
+    }
+
+    &__contact {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+
+        a {
+            width: max-content;
+            color: #999999;
+            margin-top: 10px;
+            pointer-events: auto;
+            transition: all 0.2s;
+
+            &:hover {
+                transform: translateX(10px);
+            }
+        }
+    }
+
+    &__mail {
+        color: #a7c353;
+        &:hover {
+            color: #86a133;
+        }
+    }
+
+    &__working {
+        margin-top: 20px;
+        @include line-height(19, 18);
+    }
+    &__sub-title{
+        font-weight: bold;
+    }
+}
