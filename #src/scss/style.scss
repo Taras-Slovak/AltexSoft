@@ -3,7 +3,8 @@
 
 body {
     font-family: Georgia;
-    background-color: #FFFFFF;
+    background-color: #313131;
+    
 }
 
 a {
@@ -12,11 +13,9 @@ a {
 
 
 .wrapper {
-    max-width: 1160px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 1200px;
     margin: auto;
-    background-color: #313131;
+    
 
     @media only screen and (max-width: 900px) {
 
